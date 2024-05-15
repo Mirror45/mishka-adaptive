@@ -16,7 +16,7 @@ import htmlmin from 'gulp-htmlmin'
 
 // Styles
 export const styles = () => {
-  return gulp.src('source/sass/style.scss', {sourcemaps: true})
+  return gulp.src('source/sass/style.scss', { sourcemaps: true })
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([
@@ -24,7 +24,7 @@ export const styles = () => {
       csso()
     ]))
     .pipe(rename('style.min.css'))
-    .pipe(gulp.dest('build/css', {sourcemaps: '.'}))
+    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
 
@@ -37,7 +37,7 @@ const reload = (done) => {
 // HTML
 const html = () => {
   return gulp.src('source/*.html')
-    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'));
 }
 
@@ -120,6 +120,8 @@ const server = (done) => {
 
 // Watcher
 const watcher = () => {
+  gulp.watch('source/img/**/*.{png,jpg}', gulp.series(optimizeImages));
+  gulp.watch('source/img/icons/**/*.svg', gulp.series(sprite));
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
   gulp.watch('source/js/script.js', gulp.series(scripts));
   gulp.watch('source/*.html', gulp.series(html, reload));
