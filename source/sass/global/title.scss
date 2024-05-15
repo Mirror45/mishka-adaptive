@@ -1,0 +1,36 @@
+.title-mobile {
+  padding: 0;
+  margin: 0;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  $text-second-color: #000000;
+}
+
+.title-tablet {
+  padding: 0;
+  margin: 0;
+  font-size: 43px;
+  font-weight: 700;
+  line-height: 50px;
+  $text-second-color: #000000;
+}
+
+.title-desktop {
+  padding: 0;
+  margin: 0;
+  font-size: 53px;
+  font-weight: 700;
+  line-height: 57px;
+  $text-second-color: #000000;
+}
+
+.subtitle {
+  padding: 0;
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $text-accent-color;
+}
