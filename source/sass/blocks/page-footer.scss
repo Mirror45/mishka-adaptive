@@ -1,7 +1,13 @@
 .page-footer {
   padding-top: 25px;
   padding-bottom: 32px;
+  margin-top: 105px;
   background-color: $bg-color-grey;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 51px;
+    padding-bottom: 58px;
+  }
 }
 
 .page-footer__wrapper {
