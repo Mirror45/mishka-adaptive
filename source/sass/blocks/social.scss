@@ -1,0 +1,30 @@
+.social {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 41px;
+  justify-items: center;
+  align-items: center;
+  max-width: 140px;
+  padding: 0;
+  padding-bottom: 27px;
+  margin: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0px;
+  }
+}
+
+.social__link-icon {
+  display: block;
+  color: $text-second-color;
+
+  &:hover,
+  &:focus {
+    color: #46C1AE;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

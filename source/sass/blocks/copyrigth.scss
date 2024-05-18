@@ -1,0 +1,27 @@
+.copyrigth {
+  display: flex;
+  align-items: center;
+}
+
+.copyrigth__text {
+  padding: 0;
+  margin: 0;
+  margin-right: 27px;
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: 700;
+  font-family: $font-bold;
+  color: $text-second-color;
+}
+
+.copyrigth__link-icon {
+  display: block;
+  color: $text-accent-color;
+  &:hover,
+  &:focus {
+    color: #46C1AE;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
