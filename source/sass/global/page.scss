@@ -11,7 +11,6 @@
   font-family: $font-family;
   font-size: 17px;
   font-weight: 400;
-  font-style: normal;
   line-height: 30px;
   color: $text-base-color;
 }
@@ -21,3 +20,7 @@ img {
   height: auto;
 }
 
+.page-main,
+.page-catalog {
+  min-height: 100vh;
+}

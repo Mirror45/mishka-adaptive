@@ -4,9 +4,9 @@
 @import "global/variables.scss";
 @import "global/mixins.scss";
 @import "global/page.scss";
-@import "global/title.scss";
 @import "global/container.scss";
 @import "global/button.scss";
+@import "global/title.scss";
 @import "global/visually-hidden.scss";
 
 // blocks
@@ -17,6 +17,10 @@
 
 
 // form
+
+
+//about-us
+@import "blocks/about-us.scss";
 
 
 //footer
