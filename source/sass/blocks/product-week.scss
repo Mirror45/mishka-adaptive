@@ -1,0 +1,145 @@
+.product-week__wrapper {
+  position: relative;
+  margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 52px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 73px;
+  }
+}
+
+.product-week__head {
+  margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+    grid-column: 1/-1;
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 61px;
+    left: 0;
+    flex-direction: row-reverse;
+  }
+}
+
+.product-week__title {
+  flex-grow: 1;
+}
+
+.product-week__subtitle {
+  @media (min-width: $tablet-width) {
+    padding: 0 25px;
+    align-self: center;
+    width: 175px;
+
+    text-align: center;
+  }
+}
+
+.product-week__body {
+  width: 260px;
+
+  @media (min-width: $tablet-width) {
+    width: 290px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 58px;
+    padding-top: 153px;
+    justify-self: flex-end;
+  }
+}
+
+.product-week__description {
+  margin: 0;
+  margin-bottom: 22px;
+
+  font-size: 15px;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 42px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 53px;
+  }
+}
+
+.product-week__table {
+  margin-bottom: 28px;
+  width: 100%;
+
+  border-spacing: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 109px;
+  }
+}
+
+.product-week__row {
+  padding: 12px 0;
+
+  border-bottom: 1px solid #ececec;
+
+  font-size: 15px;
+  line-height: 20px;
+
+  &:first-child {
+    text-align: left;
+    font-weight: normal;
+    width: 97px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 14px 0;
+  }
+}
+
+.product-week__img-mobile {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.product-week__price {
+  margin: 0;
+  margin-bottom: 25px;
+
+  text-align: center;
+  font-weight: bold;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 33px;
+  }
+}
+
+.product-week__button {
+  width: 100%;
+}
+
+.product-week__img {
+  display: none;
+  width: 100%;
+  height: 100%;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}

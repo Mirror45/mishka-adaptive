@@ -15,6 +15,10 @@
   color: $text-base-color;
 }
 
+picture {
+  display: flex;
+}
+
 img {
   max-width: 100%;
   height: auto;
