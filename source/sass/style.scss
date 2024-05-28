@@ -8,6 +8,7 @@
 @import "global/button.scss";
 @import "global/title.scss";
 @import "global/visually-hidden.scss";
+@import "global/zigzag.scss";
 
 // blocks
 
@@ -17,6 +18,9 @@
 
 
 // form
+
+//promo
+@import "blocks/promo.scss";
 
 //product-week
 @import "blocks/product-week.scss";
