@@ -1,5 +1,4 @@
 // global
-
 @import "global/fonts.scss";
 @import "global/variables.scss";
 @import "global/mixins.scss";
@@ -11,10 +10,12 @@
 @import "global/zigzag.scss";
 
 // blocks
+@import "blocks/icon.scss";
 
 
 // catalog
-
+@import "blocks/catalog.scss";
+@import "blocks/card-product.scss";
 
 
 // form
