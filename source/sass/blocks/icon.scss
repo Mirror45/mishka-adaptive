@@ -1,0 +1,15 @@
+.icon {
+  display: block;
+  color: $text-second-color;
+  opacity: 0.2;
+
+  &:hover,
+  &:focus {
+    color: $text-accent-color;
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

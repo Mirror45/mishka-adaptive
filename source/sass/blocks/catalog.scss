@@ -1,0 +1,28 @@
+.catalog__list {
+  display: grid;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  grid-row-gap: 30px;
+
+  @media (min-width: $tablet-width) {
+    grid-row-gap: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 51px;
+  }
+}
+
+.catalog__item {
+  border: 1px solid #E5E5E5;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
+}
