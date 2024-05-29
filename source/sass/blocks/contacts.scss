@@ -132,13 +132,28 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  @media (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
+    background-image: url(../img/contacts/map-mobile@2x.webp);
+  }
+
   @media (min-width: $tablet-width) {
     height: 457px;
 
     background-image: url(../img/contacts/map-tablet.webp);
+
+    @media (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
+      background-image: url(../img/contacts/map-tablet@2x.webp);
+    }
   }
 
   @media (min-width: $desktop-width) {
     background-image: url(../img/contacts/map-desktop.webp);
+
+    @media (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
+      background-image: url(../img/contacts/map-desktop@2x.webp);
+    }
   }
 }

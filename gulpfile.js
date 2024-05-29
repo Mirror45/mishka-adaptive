@@ -109,7 +109,8 @@ const clean = () => {
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'build'
+      baseDir: 'build',
+      index: "catalog.html",
     },
     cors: true,
     notify: false,

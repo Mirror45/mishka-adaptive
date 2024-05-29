@@ -33,6 +33,11 @@
       background-repeat: no-repeat;
       content: "";
       z-index: -1;
+
+      @media (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi) {
+        background-image: url(../img/reviews/review@2x.webp);
+      }
     }
   }
 
