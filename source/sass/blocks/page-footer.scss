@@ -1,7 +1,6 @@
 .page-footer {
   padding-top: 25px;
   padding-bottom: 32px;
-  margin-top: 105px;
   background-color: $bg-color-grey;
 
   @media (min-width: $tablet-width) {
@@ -25,10 +24,12 @@
 .page-footer__logo-image {
   display: none;
   color: $text-second-color;
+
   &:hover,
   &:focus {
     color: #46C1AE;
   }
+
   &:active {
     opacity: 0.3;
   }
