@@ -26,11 +26,12 @@
       position: absolute;
       display: block;
       width: 350px;
-      height: 457px;
+      height: 100%;
       left: -50px;
 
       background-image: url(../img/reviews/review.webp);
       background-repeat: no-repeat;
+      background-size: cover;
       content: "";
       z-index: -1;
 
@@ -122,7 +123,7 @@
   }
 }
 
-.reviews__arrow {
+.reviews__icon-arrow {
   flex-grow: 1;
   padding: 13px 0;
 

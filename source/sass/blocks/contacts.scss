@@ -50,7 +50,7 @@
   }
 }
 
-.contacts__flag {
+.contacts__icon-flag {
   margin-left: auto;
 
   @media (max-width: calc($tablet-width - 1px)) {
@@ -73,7 +73,8 @@
 
   @media (min-width: $desktop-width) {
     justify-self: end;
-    display: block;
+    display: flex;
+    flex-direction: column;
     width: 290px;
     min-height: 287px;
     margin-bottom: 0;
@@ -118,9 +119,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    left: auto;
-    bottom: 0;
+    position: static;
     transform: none;
+    margin-top: auto;
   }
 }
 

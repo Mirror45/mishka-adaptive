@@ -51,11 +51,6 @@
                 <td class="product-week__row">15см</td>
               </tr>
             </table>
-            <picture>
-              <source media="(max-width: 767px)"
-                srcset="./img/product-week/triple-set-mobile.webp, ./img/product-week/triple-set-mobile@2x.webp 2x">
-              <img class="product-week__img-mobile" width="260" height="315" alt="Вязаные корзинки" />
-            </picture>
             <p class="product-week__price">Цена: 990 руб.</p>
             <button class="product-week__button button">Заказать</button>
           </div>
@@ -64,7 +59,10 @@
               srcset="./img/product-week/triple-set-desktop.webp, ./img/product-week/triple-set-desktop@2x.webp 2x">
             <source media="(min-width: 768px)"
               srcset="./img/product-week/triple-set-tablet.webp, ./img/product-week/triple-set-tablet@2x.webp 2x">
-            <img class="product-week__img" width="334" height="404" alt="Вязаные корзинки">
+            <source media="(min-width: 320px)"
+              srcset="./img/product-week/triple-set-mobile.webp, ./img/product-week/triple-set-mobile@2x.webp 2x">
+            <img class="product-week__img" src="./img/product-week/triple-set-mobile.png" width="260" height="315"
+              alt="Вязаные корзинки">
           </picture>
         </div>
       </div>
@@ -120,10 +118,11 @@
             </li>
           </ul>
           <div class="reviews__navigation">
-            <svg class="reviews__arrow" width="50" tabindex="1" aria-label="arrow-left">
+            <svg class="reviews__icon-arrow" width="50" tabindex="1" aria-label="arrow-left">
               <use xlink:href="./img/sprite.svg#huge-arrow-left" />
             </svg>
-            <svg class="reviews__arrow reviews__arrow--right" width="50" tabindex="1" aria-label="arrow-right">
+            <svg class="reviews__icon-arrow reviews__icon-arrow--right" width="50" tabindex="1"
+              aria-label="arrow-right">
               <use xlink:href="./img/sprite.svg#huge-arrow-left" />
             </svg>
           </div>
@@ -138,7 +137,7 @@
       <div class="contacts__wrapper">
         <div class="contacts__head">
           <h2 class="contacts__title title">Контакты</h2>
-          <svg class="contacts__flag" width="47" height="81" aria-label="flag">
+          <svg class="contacts__icon-flag" width="47" height="81" aria-label="flag">
             <use xlink:href="./img/sprite.svg#flag" />
           </svg>
         </div>

@@ -1,0 +1,129 @@
+.manufacturing__wrapper {
+  position: relative;
+  margin-bottom: 58px;
+  padding-top: 96px;
+
+  border: 1px solid #e5e5e5;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 64px;
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 105px;
+    display: grid;
+    grid-template-columns: 687px 1fr;
+  }
+}
+
+.manufacturing__video-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.manufacturing__video {
+  object-fit: fill;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.manufacturing__icon-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  cursor: pointer;
+}
+
+.manufacturing__body {
+  padding: 0 34px 33px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 42px 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    padding-top: 47px;
+    padding-left: 80px;
+    padding-right: 47px;
+    padding-bottom: 60px;
+  }
+}
+
+.manufacturing__head {
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  min-height: 96px;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    min-height: auto;
+    margin-bottom: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    gap: 27px;
+    grid-template-columns: min-content;
+  }
+}
+
+.manufacturing__icon-video {
+  margin-right: 25px;
+  flex-shrink: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 33px;
+  }
+}
+
+.manufacturing__title {
+  margin: 0;
+
+  color: black;
+  font-size: 17px;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+}
+
+.manufacturing__description {
+  margin: 0;
+  margin-bottom: 41px;
+
+  font-size: 13px;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: auto;
+  }
+}
+
+.manufacturing__button {
+  width: 100%;
+}
