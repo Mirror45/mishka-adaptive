@@ -10,20 +10,23 @@
 
 // blocks
 @import "blocks/icon.scss";
-@import "blocks/zigzag.scss";
-
-// page-header
-@import "blocks/page-header.scss";
+@import "blocks/control.scss";
 
 // catalog
 @import "blocks/catalog.scss";
 @import "blocks/card-product.scss";
+@import "blocks/zigzag.scss";
+
+// page-header
+@import "blocks/page-header.scss";
 
 //manufacturing
 @import "blocks/manufacturing.scss";
 
 
 // form
+@import "blocks/order-form.scss";
+@import "blocks/product-data.scss";
 
 //promo
 @import "blocks/promo.scss";
