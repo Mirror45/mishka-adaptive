@@ -10,7 +10,7 @@
 
 // blocks
 @import "blocks/icon.scss";
-
+@import "blocks/control.scss";
 
 // catalog
 @import "blocks/catalog.scss";
@@ -18,6 +18,8 @@
 
 
 // form
+@import "blocks/order-form.scss";
+@import "blocks/product-data.scss";
 
 
 //about-us

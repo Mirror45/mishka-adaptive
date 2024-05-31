@@ -1,0 +1,146 @@
+/* Control */
+.control {
+  position: relative;
+  display: block;
+  padding-left: 61px;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 81px;
+  }
+}
+
+/* Mark */
+.control__mark {
+  position: absolute;
+  top: -8px;
+  left: 0;
+  width: 39px;
+  height: 39px;
+  border: 2px solid $text-base-color;
+  background-color: transparent;
+  cursor: pointer;
+
+
+  @media (min-width: $tablet-width) {
+     top: -10px;
+     width: 52px;
+     height: 52px;
+  }
+}
+
+.control__input:focus ~ .control__mark,
+.control__input:focus ~ .control__mark,
+.control__input:active ~ .control__mark,
+.control__input:active ~ .control__mark {
+  border-color: #62D1BA;
+}
+
+.control:hover .control__mark{
+  border-color: #62D1BA;
+}
+
+.control:active .control__mark{
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Radio */
+.control__input[type="radio"] + .control__mark {
+  position: absolute;
+  top: -9px;
+  left: 0;
+  width: 41px;
+  height: 41px;
+  border: 2px solid $text-base-color;
+  background-color: transparent;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+     top: -16.9px;
+     left: 4px;
+     width: 50px;
+     height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -15.7px;
+    left: 2.5px;
+ }
+}
+
+.control__input[type="radio"] + .control__mark {
+  border-radius: 50%;
+}
+
+.control__input[type="radio"]:checked + .control__mark::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 17.33px;
+  height: 17.33px;
+  background-color: #62D1BA;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    top: 13px;
+    left: 13px;
+    width: 19.69px;
+    height: 19.69px;
+ }
+}
+
+  /* Checkbox */
+  .control__input[type="checkbox"] + .control__mark {
+    position: absolute;
+    content: "";
+    top: -12px;
+    left: 0;
+    width: 38px;
+    height: 38px;
+    background-color: transparent;
+    border: 2px solid #000;
+
+
+    @media (min-width: $tablet-width) {
+       top: -16px;
+       left: 1.4px;
+       width: 50px;
+       height: 50px;
+    }
+
+    @media (min-width: $tablet-width) {
+      top: -18.6px;
+   }
+  }
+
+  .control__input[type="checkbox"]:checked + .control__mark::before {
+    content: "";
+    display: block;
+    height: 38px;
+    width: 38px;
+    background-image: url("../../img/icons/icon-tick.svg");
+    background-repeat: no-repeat;
+    background-size: 23px 16px;
+    background-position: 6px center;
+
+    @media (min-width: $tablet-width) {
+      height: 52px;
+      width: 52px;
+      background-size: 32px 22px;
+    }
+  }
+
+/* Label */
+.control__label {
+  font-family: $font-bold;
+  font-size: 17px;
+  font-weight: 700;
+  color: $text-second-color;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+  }
+}
+

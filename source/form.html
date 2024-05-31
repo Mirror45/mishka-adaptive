@@ -17,6 +17,151 @@
 
 <body class="page__body">
 
+  <main>
+    <section class="order-form">
+      <h2 class="visually-hidden">Форма оформления заказа</h2>
+      <div class="container">
+        <p class="order-form__info">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      </div>
+
+      <form class="order-form__form" action="https://echo.htmlacademy.ru" method="POST">
+        <fieldset class="order-form__fieldset">
+          <legend class="visually-hidden">Данные об изделии</legend>
+          <fieldset class="order-form__fieldset product-data">
+            <div class="container">
+              <div class="product-data__wrapper product-data__wrapper--type">
+                <legend class="product-data__legend subtitle">
+                  <span class="product-data__legend-text">Тип</span>
+                </legend>
+                <ul class="product-data__list">
+                  <li class="product-data__item-type">
+                    <label class="control">
+                      <input class="visually-hidden control__input" type="radio" name="type-select" value="Interior accessory" checked>
+                      <span class="control__mark"></span>
+                      <span class="control__label">Аксессуар для интерьера</span>
+                    </label>
+                  </li>
+                  <li class="product-data__item-type">
+                    <label class="control">
+                      <input class="visually-hidden control__input" type="radio" name="type-select" value="Children's toy" >
+                      <span class="control__mark"></span>
+                      <span class="control__label">Детская игрушка</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="order-form__fieldset product-data order-form__fieldset--bg">
+            <div class="container product-data">
+              <div class="product-data__wrapper product-data__wrapper--color">
+                <legend class="product-data__legend subtitle">
+                  <span class="product-data__legend-text">ЦВЕТ</span>
+                </legend>
+                <ul class="product-data__list product-data__grid-color">
+                  <li class="product-data__item">
+                    <label class="control">
+                      <input class="visually-hidden control__input" type="checkbox" name="Color-White" checked>
+                      <span class="control__mark"></span>
+                      <span class="control__label">Белый</span>
+                    </label>
+                  </li>
+                  <li class="product-data__item">
+                    <label class="control">
+                      <input class="visually-hidden control__input" type="checkbox" name="Color-Grey" checked>
+                      <span class="control__mark"></span>
+                      <span class="control__label">Серый</span>
+                    </label>
+                  </li>
+                  <li class="product-data__item">
+                    <label class="control">
+                      <input class="visually-hidden control__input" type="checkbox" name="Color-Tiffany">
+                      <span class="control__mark"></span>
+                      <span class="control__label">«Тиффани»</span>
+                    </label>
+                  </li>
+                  <li class="product-data__item">
+                    <label class="control">
+                      <input class="visually-hidden control__input" type="checkbox" name="Color-Black">
+                      <span class="control__mark"></span>
+                      <span class="control__label">Черный</span>
+                    </label>
+                  </li>
+                  <li class="product-data__item">
+                    <label class="control">
+                      <input class="visually-hidden control__input" type="checkbox" name="Color-Pink">
+                      <span class="control__mark"></span>
+                      <span class="control__label">Розовый</span>
+                    </label>
+                  </li>
+                  <li class="product-data__item">
+                    <label class="control">
+                      <input class="visually-hidden control__input" type="checkbox" name="Color-Orange">
+                      <span class="control__mark"></span>
+                      <span class="control__label">Оранжевый</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </fieldset>
+
+        </fieldset>
+
+      </form>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="container">
+      <div class="page-footer__wrapper">
+
+        <a href="index.html" class="page-footer__logo">
+          <svg class="page-footer__logo-image" width="102" height="34">
+            <use xlink:href="./img/sprite.svg#logo-footer" />
+          </svg>
+        </a>
+
+        <ul class="page-footer__social social">
+          <li class="social__item">
+            <a href="catalog.html" class="social__link" aria-label="Ссылка на Instagram">
+              <svg class="social__link-icon" width="22" height="21">
+                <use xlink:href="./img/sprite.svg#insta" />
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="form.html" class="social__link" aria-label="Ссылка на Facebook">
+              <svg class="social__link-icon" width="15" height="28">
+                <use xlink:href="./img/sprite.svg#fb" />
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link" aria-label="Ссылка на Twitter">
+              <svg class="social__link-icon" width="23" height="20">
+                <use xlink:href="./img/sprite.svg#twitter" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <hr class="page-footer__hr">
+
+        <div class="page-footer__copyrigth copyrigth">
+          <b class="copyrigth__text">Разработано</b>
+          <a href="#" class="copyrigth__link">
+            <svg class="copyrigth__link-icon" width="27" height="34">
+              <use xlink:href="./img/sprite.svg#htmlacademy" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
 <script src="js/script.min.js"></script>
 
 </body>
