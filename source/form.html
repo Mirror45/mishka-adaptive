@@ -28,11 +28,12 @@
         <fieldset class="order-form__fieldset">
           <legend class="visually-hidden">Данные об изделии</legend>
           <fieldset class="order-form__fieldset product-data">
+            <legend class="visually-hidden">Тип изделия</legend>
             <div class="container">
-              <div class="product-data__wrapper product-data__wrapper--type">
-                <legend class="product-data__legend subtitle">
-                  <span class="product-data__legend-text">Тип</span>
-                </legend>
+              <div class="order-form__wrapper order-form__wrapper--type">
+                <h3 class="order-form__legend subtitle">
+                  <span class="order-form__legend-text">Тип</span>
+                </h3>
                 <ul class="product-data__list">
                   <li class="product-data__item-type">
                     <label class="control">
@@ -54,12 +55,13 @@
           </fieldset>
 
           <fieldset class="order-form__fieldset product-data order-form__fieldset--bg">
-            <div class="container product-data">
-              <div class="product-data__wrapper product-data__wrapper--color">
-                <legend class="product-data__legend subtitle">
-                  <span class="product-data__legend-text">ЦВЕТ</span>
-                </legend>
-                <ul class="product-data__list product-data__grid-color">
+            <legend class="visually-hidden">Цвет изделия</legend>
+            <div class="container">
+              <div class="order-form__wrapper order-form__wrapper--color">
+                <h3 class="order-form__legend subtitle">
+                  <span class="order-form__legend-text">ЦВЕТ</span>
+                </h3>
+                <ul class="product-data__list product-data__wrapper-color">
                   <li class="product-data__item">
                     <label class="control">
                       <input class="visually-hidden control__input" type="checkbox" name="Color-White" checked>
@@ -107,7 +109,71 @@
             </div>
           </fieldset>
 
+          <fieldset class="order-form__fieldset client-data">
+            <legend class="visually-hidden">Данные о заказчике</legend>
+              <div class="container">
+                <div class="order-form__wrapper order-form__wrapper--client">
+                  <h3 class="order-form__legend subtitle client-data__legend">
+                    <span class="order-form__legend-text">ФИО</span>
+                  </h3>
+                  <div class="client-data__wrapper">
+                    <label class="order-form__legend client-data__label">Имя:
+                      <input class="client-data__input input" id="client-name" type="text" name="client-name" value="" placeholder="Введите ваше имя*" required>
+                    </label>
+                    <label class="order-form__legend client-data__label">Фамилия:
+                      <input class="client-data__input input" id="client-surname" type="text" name="client-surname" value="" placeholder="Укажите фамилию*" required>
+                    </label>
+                    <label class="order-form__legend client-data__label">Отчество:
+                      <input class="client-data__input input" id="client-patronymic" type="text" name="client-patronymic" value="" placeholder="Отчество, если желаете">
+                    </label>
+                  </div>
+                </div>
+              </div>
+          </fieldset>
+
+          <fieldset class="order-form__fieldset client-contacts order-form__fieldset--bg">
+            <legend class="visually-hidden">Связь</legend>
+            <div class="container">
+              <div class="order-form__wrapper order-form__wrapper--contacts">
+                <label class="order-form__legend client-contacts__legend subtitle" for="client-tel">
+                  <span class="order-form__legend-text">Тел</span>
+                </label>
+                <div class="client-contacts__input-wrapper">
+                  <input class="client-contacts__input input" id="client-tel" type="tel" name="client-tel" value=""
+                    placeholder="+7 XXX XXX XX XX*" pattern="[+]7 [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" required>
+                  <svg class="client-contacts__input-icon client-contacts__input-icon--tel" width="25" height="24" aria-hidden="true" focusable="false">
+                    <use xlink:href="./img/sprite.svg#phone-icon" />
+                  </svg>
+                </div>
+                <label class="order-form__legend  client-contacts__legend subtitle" for="client-email">
+                  <span class="order-form__legend-text">e&#8209;mail</span>
+                </label>
+                <div class="client-contacts__input-wrapper">
+                  <input class="client-contacts__input input" id="client-email" type="email" name="client-email" value="" placeholder="Ваш Email*" required>
+                  <svg class="client-contacts__input-icon client-contacts__input-icon--email" width="32" height="21" aria-hidden="true" focusable="false">
+                    <use xlink:href="./img/sprite.svg#mail-icon" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </fieldset>
         </fieldset>
+        <div class="order-form__additionally">
+          <div class="container">
+            <div class="order-form__wrapper order-form__wrapper--additionally">
+              <label class="order-form__legend  order-form__legend--additionally subtitle" for="additionally">
+                <span class="order-form__legend-text">Доп</span>
+              </label>
+              <textarea class="order-form__textarea" id="additionally" name="additionally" placeholder="Опишите все ваши пожелания к заказу" cols="30" rows="6"></textarea>
+            </div>
+          </div>
+        </div>
+
+          <div class="container order-form__button-wrapper">
+            <small class="order-form__required">*Поля обязательны для заполнения</small>
+
+            <button class="order-form__button  button" type="submit">Отправить заказ</button>
+          </div>
 
       </form>
     </section>
@@ -125,14 +191,14 @@
 
         <ul class="page-footer__social social">
           <li class="social__item">
-            <a href="catalog.html" class="social__link" aria-label="Ссылка на Instagram">
+            <a href="#" class="social__link" aria-label="Ссылка на Instagram">
               <svg class="social__link-icon" width="22" height="21">
                 <use xlink:href="./img/sprite.svg#insta" />
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a href="form.html" class="social__link" aria-label="Ссылка на Facebook">
+            <a href="#" class="social__link" aria-label="Ссылка на Facebook">
               <svg class="social__link-icon" width="15" height="28">
                 <use xlink:href="./img/sprite.svg#fb" />
               </svg>
