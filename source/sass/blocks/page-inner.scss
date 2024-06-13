@@ -1,0 +1,26 @@
+.page-inner__wrapper {
+  padding: 73px 22px 73px;
+  background-color: $bg-color-grey;
+
+  @media (min-width: $desktop-width) {
+    padding: 102px 50px 95px;
+  }
+}
+
+.page-inner__title {
+  display: flex;
+  justify-content: center;
+  font-family: $font-bold;
+  font-size: 27px;
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
