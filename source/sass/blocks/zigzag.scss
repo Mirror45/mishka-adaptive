@@ -1,14 +1,17 @@
 .zigzag {
-  display: block;
-  padding: 0;
   height: 6px;
+  background-image: url(../img/zigzag/zigzag-line.svg);
+  background-repeat: repeat-x;
+  background-size: auto 100%;
 
   @media (min-width: $tablet-width) {
     height: 17px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 50px;
     height: 23px;
+    background-size: 1050px 100%;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
