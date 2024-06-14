@@ -29,21 +29,6 @@
   }
 }
 
-.control__input:focus ~ .control__mark,
-.control__input:focus ~ .control__mark,
-.control__input:active ~ .control__mark,
-.control__input:active ~ .control__mark {
-  border-color: #62D1BA;
-}
-
-.control:hover .control__mark{
-  border-color: #62D1BA;
-}
-
-.control:active .control__mark{
-  border-color: rgba(0, 0, 0, 0.3);
-}
-
 /* Radio */
 .control__input[type="radio"] + .control__mark {
   position: absolute;
@@ -103,14 +88,14 @@
 
 
     @media (min-width: $tablet-width) {
-       top: -16px;
+       top: -14.9px;
        left: 1.4px;
        width: 50px;
        height: 50px;
     }
 
-    @media (min-width: $tablet-width) {
-      top: -18.6px;
+    @media (min-width: $desktop-width) {
+      top: -19px;
    }
   }
 
@@ -139,8 +124,31 @@
   color: $text-second-color;
   cursor: pointer;
 
+  &:hover {
+    color: #62D1BA;;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 19px;
   }
 }
 
+
+.control__input:focus ~ .control__mark,
+.control__input:focus ~ .control__mark,
+.control__input:active ~ .control__mark,
+.control__input:active ~ .control__mark {
+  border-color: #62D1BA;
+}
+
+.control:hover .control__mark{
+  border-color: #62D1BA;
+}
+
+.control:active .control__mark{
+  border-color: rgba(0, 0, 0, 0.3);
+}
