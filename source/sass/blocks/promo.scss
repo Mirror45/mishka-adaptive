@@ -1,26 +1,90 @@
-.promo__polygon {
-  @media (min-width: $tablet-width) {
-    position: relative;
-    height: 14px;
+.promo {
+  position: relative;
+  margin-bottom: 31px;
 
-    &::before {
-      content: "";
-      position: absolute;
-      display: block;
-      bottom: 0;
-      width: 100%;
-      height: 24px;
-      background-image: url(../img/zigzag/zigzag-fill.svg);
-      background-repeat: repeat-x;
-      background-size: auto 100%;
+  background-color: #FAFAFA;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-image: url(../img/promo/hero-mobile.webp);
+
+  @media (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
+    background-image: url(../img/promo/hero-mobile@2x.webp);
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+
+    background-image: url(../img/promo/hero-desktop.webp);
+
+     @media (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
+      background-image: url(../img/promo/hero-desktop@2x.webp);
     }
   }
 
   @media (min-width: $desktop-width) {
-    height: 24px;
-
-    &::before {
-      height: 34px;
-    }
+    margin-bottom: 54px;
   }
+}
+
+.promo__wrapper {
+  min-height: 490px;
+  padding-top: 73px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    min-height: 746px;
+    padding-top: 155px;
+  }
+}
+
+.promo__title {
+  text-align: center;
+}
+
+.promo__list {
+  position: relative;
+  left: -30px;
+  display: grid;
+  width: 100%;
+  min-width: 320px;
+  margin: auto 0 0;
+  padding-left: 0;
+
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    left: 0;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 15px;
+  }
+}
+
+.promo__item {
+  display: grid;
+  min-height: 103px;
+  padding: 0 30px;
+  grid-template-columns: min-content auto;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 24px;
+  color: white;
+  background-color: #63D1BB;
+
+  &:nth-child(2n) {
+    background-color: #56C3B2;
+  }
+
+   @media (min-width: $tablet-width)  {
+    padding: 0 36px;
+    min-height: 119px;
+
+    font-size: 20px;
+    line-height: 30px;
+   }
 }

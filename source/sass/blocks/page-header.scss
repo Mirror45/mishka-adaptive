@@ -45,8 +45,14 @@
 .page-header__navigation {
   order: 1;
 
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+  }
+
   @media (min-width: $desktop-width) {
     display: contents;
+
+    font-size: 17px;
 
     .page-header__item {
       order: -1;
@@ -56,6 +62,10 @@
 
 .page-header__offer {
   order: 1;
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+  }
 
   @media (min-width: $desktop-width) {
     display: contents;

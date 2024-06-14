@@ -1,9 +1,12 @@
 .page-inner__wrapper {
-  padding: 73px 22px 73px;
+  position: relative;
+  display: grid;
+  align-items: center;
   background-color: $bg-color-grey;
+  padding: 75px 0;
 
-  @media (min-width: $desktop-width) {
-    padding: 102px 50px 95px;
+  @media (min-width: $tablet-width) {
+    padding: 100px 0;
   }
 }
 
