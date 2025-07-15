@@ -54,6 +54,32 @@
 
 ---
 
+## 📁 Project Structure
+
+source/
+
+├── sass/ # SCSS modules (global styles, blocks)
+
+├── img/ # Images: content, decorative, SVGs
+
+├── fonts/ # Local font files
+
+├── *.html # Markup pages (index.html, catalog.html, form.html)
+
+└── manifest.webmanifest
+
+build/
+
+├── css/ # Compiled and minified styles
+
+├── img/ # Optimized and WebP images
+
+├── fonts/ # Fonts (copied from source)
+
+├── *.html # Production HTML pages
+
+---
+
 ## 📦 Getting Started
 
 > ⚠️ **Node.js v16** is required to run the build tools.
