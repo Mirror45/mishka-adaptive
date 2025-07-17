@@ -1,7 +1,7 @@
 {
   "name": "mishka",
   "private": true,
-  "description": "Интернет магазин «Мишка»",
+  "description": "Adaptive website for Mishka handmade products store",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.4.0",
