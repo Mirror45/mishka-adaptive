@@ -1,82 +1,62 @@
-# 🧸 Mishka — Adaptive Handcrafted Toy Store
+# 🐻 Mishka — Knitted Toys Online Store
 
-**Mishka** is a responsive, cross-browser, semantic layout of an online handcrafted toy shop. The project includes three fully adaptive pages: homepage, catalog, and form. Built with **HTML**, **Sass**, and assembled with **Gulp 4**, the project implements the **BEM** methodology, progressive enhancement, and retina-ready graphics.
+**Mishka** is a multi-page website for an online store selling handmade knitted toys. The project is built using the **Mobile First** methodology (designing for mobile devices first, then scaling up to tablets and desktops). The layout is adaptive, fluid, and cross-browser compatible.
 
 ---
 
 ## 📄 Pages
 
-- **Homepage** — promotional categories, product of the week with modal call-to-action, customer review block, and Map.
-- **Catalog Page** — product grid with links, product image cropping, and video placeholder block.
-- **Form Page** — contact/order form with custom fields, responsive layout, and built-in validation.
+The project consists of 3 key pages (located in the root of `source/`):
+
+- **index.html** — Homepage (promotional items, reviews, contacts).
+- **catalog.html** — Catalog (list of toys with prices and specifications).
+- **form.html** — Custom Order Form (a complex form with various input types: radio buttons, checkboxes, text inputs, and validation).
 
 ---
 
 ## 🧰 Tech Stack
 
 ### 🔧 Core Technologies
+- **HTML5**: Semantic markup, accessibility (a11y).
+- **Sass (SCSS)**: Uses SCSS syntax. Styles are modularized according to the BEM methodology (`blocks/`, `global/`).
+- **BEM**: Class naming follows the Block-Element-Modifier methodology.
+- **JavaScript**: Native JS (Vanilla) for interface interactivity (modal windows, mobile menu, map).
+- **Gulp 4**: Project build and task automation.
 
-| Technology       | Description |
-|------------------|-------------|
-| **HTML5**        | Semantic and accessible markup. Validated via [W3C Validator](https://validator.w3.org/nu/). |
-| **Sass (SCSS)**  | Modular structure with variables and mixins. Organized by `blocks/` and `global/`. |
-| **Gulp 4**       | Used for automation: compiling styles, optimizing assets, live server, sprite generation. |
-| **BEM Methodology** | Strict naming convention for scalable and reusable styles. |
+### ⚙️ Build Features (Gulp)
 
----
+The build is configured to automate the following tasks:
 
-## 🎯 Implementation Highlights
-
-- **Mobile-first adaptive layout** for 320px, 768px, and 1150px breakpoints.
-- **No JavaScript functionality required** — critical features implemented with pure HTML/CSS (progressive enhancement).
-- **Retina-ready raster graphics** using `@2x` images.
-- **SVG sprite** for icons and decorative graphics.
-- **Local fonts** (`Open Sans`) in `.woff` and `.woff2` formats.
-- **Flexbox and CSS Grid** used for layout and alignment.
-- **Cross-browser compatibility**: Chrome, Firefox, Safari, Edge.
-- **Accessibility-minded design**: semantic tags, label associations, and visual focus states.
-- **Stylelint + EditorConfig** enforce clean and consistent code.
-- **No third-party libraries** — all styling and layout built from scratch.
-
----
-
-## 🛠 Gulp Plugins Used
-
-| Plugin                  | Purpose |
-|-------------------------|---------|
-| `gulp-dart-sass`        | Compile SCSS to CSS. |
-| `gulp-htmlmin`          | Minify HTML files. |
-| `gulp-webp`, `gulp-libsquoosh` | Optimize and convert images to WebP. |
-| `gulp-autoprefixer`, `postcss-csso` | Autoprefixing and CSS minification. |
-| `gulp-svgstore`, `gulp-svgmin` | Create and optimize SVG sprites. |
-| `browser-sync`          | LiveReload development server. |
-| `gulp-plumber`          | Error prevention during task execution. |
+| Category | Action |
+|-----------|----------|
+| **CSS** | SCSS compilation to CSS, automatic prefixing (`autoprefixer`), and style minification. |
+| **JS** | Script minification (`script.js` -> `script.min.js`). |
+| **HTML** | HTML file minification in the `build` folder. |
+| **Images** | JPG/PNG optimization and **WebP** format generation. |
+| **SVG** | SVG sprite assembly (`sprite.svg`) for icons. |
+| **Fonts** | Font copying (Open Sans). |
+| **Server** | Local `browser-sync` server with live reload. |
 
 ---
 
 ## 📁 Project Structure
 
+```text
 source/
+├── fonts/             # Fonts (Open Sans)
+├── img/               # Source images
+│   └── icons/         # Icons for sprite generation
+├── js/                # Scripts
+│   └── script.js      # Main script file
+├── sass/              # Styles (SCSS)
+│   ├── blocks/        # BEM blocks (header, footer, catalog, etc.)
+│   ├── global/        # Global styles, variables, mixins
+│   └── style.scss     # Main stylesheet entry point
+└── *.html             # HTML templates
 
-├── sass/ # SCSS modules (global styles, blocks)
+build/                 # Production build folder (generated automatically)
 
-├── img/ # Images: content, decorative, SVGs
-
-├── fonts/ # Local font files
-
-├── *.html # Markup pages (index.html, catalog.html, form.html)
-
-└── manifest.webmanifest
-
-build/
-
-├── css/ # Compiled and minified styles
-
-├── img/ # Optimized and WebP images
-
-├── fonts/ # Fonts (copied from source)
-
-├── *.html # Production HTML pages
+```
 
 ---
 
